@@ -8,8 +8,7 @@ public:
             int cnt = 1;//子串出现次数
             for(int j = i; j < s.length() - 1; j++){
                 bool flag = true;
-                int upper = -(curlen - 2);//长度为一的初值不同。
-                if(curlen == 1) upper = 1; 
+                int upper = -(curlen - 2);
                 for(int k = upper; k <= 1; k++){
                     if(s[j + k] != curc){
                         flag = false;
